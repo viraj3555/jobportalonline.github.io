@@ -3,30 +3,47 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <style media="screen">
+      .h1 {
+        margin: 10px 580px;
+      }
+      .jumbotron {
+        width: 400px;
+        margin: auto;
+        
+      }
+      .btn {
+        margin: 0 140px;
+      }
+    </style>
   </head>
   <body>
-    <h1>Login</h1>
-    <form id="form2" action="mainpage.html" method="post">
-      <div>
-        <label for="email">Email:</label>
-        <input type="text" name="email" placeholder="Enter your email here.">
-      </div>
-      &nbsp;
-      <div>
-        <label for="password">Password:</label>
-        <input type="password" name="password" placeholder="Enter your password here." >
-      </div>
-      &nbsp;
-      <div>
-        <label>New user?</label>
-        <a href="registration.html">Click Here for Registration.</a>
-      </div>
-      &nbsp;
-      <div>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <button type="submit" form="form2" name="button">Login</button>
-      </div>
-    </form>
+    <h1 class="h1">Login</h1>
+    <div class="jumbotron">
+      <form id="form2" action="mainpage.html" method="post">
+        <div>
+          <label for="email">Email:</label>
+          <input type="text" name="email" placeholder="Enter your email here.">
+        </div>
+        &nbsp;
+        <div>
+          <label for="password">Password:</label>
+          <input type="password" name="password" placeholder="Enter your password here." >
+        </div>
+        &nbsp;
+        <div>
+          <label>New user?</label>
+          <a href="registration.html">Click Here for Registration.</a>
+        </div>
+        &nbsp;
+        <div>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <button type="submit" form="form2" name="button" class="btn btn-primary">Login</button>
+        </div>
+      </form>
+    </div>
+
 
   </body>
 </html>

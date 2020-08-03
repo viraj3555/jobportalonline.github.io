@@ -3,17 +3,31 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <style media="screen">
+      .main {
+        width: 800px;
+        margin: auto;
+      }
+      .jumbotron {
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+    </style>
   </head>
   <body>
-    <div> <label>What is your purpose to visit out site?</label></div>
-    <br>
-    <div>
-      <input type="radio" name="rdb1" id="give" value="give">
-      <label for="rdb1">I want to hire talent.</label>
-    </div>
-    <div>
-      <input type="radio" name="rdb1" id="seek" value="seek">
-      <label for="rdb2">I want to get a job.</label>
+    <div class="main">
+      <div> <label>What is your purpose to visit our site?</label></div>
+      <div class="jumbotron">
+        <div>
+          <input type="radio" name="rdb1" id="give" value="give">
+          <label for="rdb1">I want to hire talent.</label>
+        </div>
+        <div>
+          <input type="radio" name="rdb1" id="seek" value="seek">
+          <label for="rdb2">I want to get a job.</label>
+        </div>
+      </div>
     </div>
   </body>
 </html>
