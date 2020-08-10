@@ -11,9 +11,9 @@
       .jumbotron {
         width: 400px;
         margin: auto;
-        
+
       }
-      .btn {
+      .btn1 {
         margin: 0 140px;
       }
     </style>
@@ -21,7 +21,7 @@
   <body>
     <h1 class="h1">Login</h1>
     <div class="jumbotron">
-      <form id="form2" action="mainpage.html" >
+      <form id="form2" action="mainpage.html" method="post" onsubmit="return validate()" required>
         <div>
           <label for="email">Email:</label>
           <input type="text" name="email" placeholder="Enter your email here.">
@@ -39,11 +39,20 @@
         &nbsp;
         <div>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <button type="submit" form="form2" name="button" class="btn btn-primary">Login</button>
+          <input type="submit" form="form2" name="button" class="btn btn-primary">
         </div>
       </form>
     </div>
-
-
+    <script type="text/javascript">
+      function validate () {
+        if (document.forms["form2"]["email"].value == '') {
+          alert('You must enter your email to login.');
+          return false;
+        } else if (document.forms["form2"]["password"].value == '') {
+          alert('You must enter your password.');
+          return false;
+        }
+      }
+    </script>
   </body>
 </html>
